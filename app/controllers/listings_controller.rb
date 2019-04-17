@@ -12,6 +12,8 @@ class ListingsController < ApplicationController
 
     def new
         #show form for creating a new listing
+        @listing = Listing.new
+        
     end
 
     def edit
