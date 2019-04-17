@@ -13,7 +13,8 @@ class ListingsController < ApplicationController
     def new
         #show form for creating a new listing
         @listing = Listing.new
-        
+        @breeds = Breed.all
+        @sexes = Listing.sexes.keys
     end
 
     def edit
